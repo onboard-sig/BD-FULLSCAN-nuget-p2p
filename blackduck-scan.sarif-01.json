@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Black Duck Intelligent",
+          "version": "9.1.0",
+          "organization": "Synopsys",
+          "rules": [
+            {
+              "id": "Newtonsoft.Json 10.0.1",
+              "shortDescription": {
+                "text": "Direct Dependency: Newtonsoft.Json 10.0.1"
+              },
+              "fullDescription": {
+                "text": "Newtonsoft.Json 10.0.1 has the following vulnerabilities: [:yellow_circle:] BDSA-2018-5195"
+              },
+              "help": {
+                "markdown": "\n## Upgrade Guidance\n\n\n\n| **Affected Dependency**  | **Recommended short term version** | **Recommended long term version** |\n| :--- | :--- | :--- |\n| Newtonsoft.Json 10.0.1  | 10.0.3  | 13.0.3 |\n\n\n\n[Click Here To See More Details in Black Duck](https://us03-qa-hub11.nprd.sig.synopsys.com//api/projects/be0f8c7b-45e3-4e76-bf1d-0e29e2a8414d/versions/7950b1e8-096b-44f7-bc02-81de36652b1c/vulnerability-bom?selectedComponent=30090830-3239-455d-8850-e7d7ef7a4677)\n\n## Vulnerabilities(BDSA,CVE)\n\n \n| **Severity**  | **Vulnerability** | **Summary** | **Solution Available?** | **Workaround Available?** |\n| :--- |:--- | :--- | :--- | :--- |\n| :yellow_circle: | [BDSA-2018-5195](https://openhub.net/vulnerabilities/bdsa/BDSA-2018-5195) | Newtonsoft.Json Vulnerable to Denial-of-Service (DoS) via Stack Overflow During Nested JSON Serialization | Yes | Yes |\n\n\n\n\n## References\n* Common Weakness Enumeration: [CWE-770](https://cwe.mitre.org/data/definitions/770.html)\n\n",
+                "text": "Newtonsoft.Json 10.0.1 has the following vulnerabilities: [:yellow_circle:] BDSA-2018-5195"
+              },
+              "properties": {
+                "security-severity": "6.8",
+                "tags": [
+                  "security",
+                  "open_source_analysis",
+                  "direct_dependency",
+                  "patch_available",
+                  "external/cwe/cwe-770"
+                ]
+              },
+              "defaultConfiguration": {
+                "level": "warning"
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "message": {
+            "text": "This dependency has vulnerabilities. For detailed information regarding the vulnerabilities, take a look at the BDSAs and/or CVEs below. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "p2pconn/p2pconn.csproj"
+                },
+                "region": {
+                  "startLine": 89
+                }
+              }
+            }
+          ],
+          "ruleId": "Newtonsoft.Json 10.0.1",
+          "partialFingerprints": {
+            "primaryLocationLineHash": "483c1c2e07a28c6fe592d6708a9d87086fdc99fccc3ce13d3521d46cace720e7"
+          }
+        },
+        {
+          "message": {
+            "text": "This dependency has vulnerabilities. For detailed information regarding the vulnerabilities, take a look at the BDSAs and/or CVEs below. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "p2pconn/packages.config"
+                },
+                "region": {
+                  "startLine": 3
+                }
+              }
+            }
+          ],
+          "ruleId": "Newtonsoft.Json 10.0.1",
+          "partialFingerprints": {
+            "primaryLocationLineHash": "7b3cc9baee74b5f9137995a6db835c1a9e074cfcb651aed6ed3493c29f75692b"
+          }
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0"
+}
